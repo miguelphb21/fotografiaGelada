@@ -1,0 +1,114 @@
+<!-- </td>
+                <td class="line1" rowspan="2">
+        
+                </td>
+            </tr>
+            <tr>
+                <td class="line2 column1">
+        
+                </td>
+                <td class="line2 column2">
+                    <div>
+            
+                        <span class="span--test" style="background-color: rgba(0, 0, 0, 60%);">oi</span>
+                    
+                    </div>
+                </td>
+
+            </tr>
+            
+            <tr class="tr1">
+                <td class="line1" rowspan="2">
+        
+                </td>
+                <td class="background" colspan="2">
+        
+                </td>
+            </tr>
+            <tr>
+                <td class="line2 column1">
+        
+                </td>
+                <td class="line2 column2">
+        
+                </td>
+
+            </tr> -->
+        <!-- tabelas  PRONTAS-->
+        
+        <!-- <table>
+            <tr class="tr1">
+                <td class="background" colspan="2">
+                    <img src="img/Everest.jpg" alt=""> 
+                </td>
+                <td class="line1" rowspan="2">
+                    <img src="img/MonteFuji.jpg" alt="">
+                </td>
+            </tr>
+            <tr>
+                <td class="line2 column1">
+                    <img src="img/AlpesSuiços.jpg" alt="">
+                </td>
+                <td class="line2 column2">
+                    <div class="relative">
+                        <div class="absolute1">
+
+                            <img src="img/GrandCanyon.jpg" alt="">
+                        </div>
+                        <div class="absolute2">
+                            <span class="span--test" style="background-color: rgba(255, 255, 255, 60%);">oi</span>
+
+                        </div>
+                    
+                    </div>
+                </td>
+
+            </tr>
+            
+            <tr class="tr1">
+                <td class="line1" rowspan="2">
+                    <img src="img/MonteBranco.jpg" alt="">
+                </td>
+                <td class="background" colspan="2">
+                    <img src="img/MonteElbrus.jpg" alt=""> 
+                </td>
+            </tr>
+            <tr>
+                <td class="line2 column1">
+                    <img src="img/PicoPikes.jpg" alt="">
+                </td>
+                <td class="line2 column2">
+                    <img src="img/Huandoy.jpg" alt="">
+                </td>
+
+            </tr>
+        </table> -->
+
+
+
+
+
+
+        <!-- tentativa de colunas -->
+        <!-- <div class="images-container">
+            <div>
+                <div class="images">
+                    <div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="images-container">
+            <img class="image#4" src="img/MonteBranco.jpg" alt="">
+            <div>
+                <img class="image#1" src="img/MonteElbrus.jpg" alt="">
+                <div class="images">
+                    <img class="image#2" src="img/PicoPikes.jpg" alt="">
+                    <div>
+                        <img class="image#3" src="img/Huandoy.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>-->

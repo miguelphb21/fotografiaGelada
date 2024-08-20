@@ -1,0 +1,188 @@
+@font-face {
+    font-family: "Concert One";
+    src: local(Concert One), url(../public/fonts/Concert_One/ConcertOne-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Roboto";
+    src: local(Roboto), url(../public/fonts/Roboto/Roboto-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+/* RESETS-MOD'S =======================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --black-color: #000000;
+}
+li{
+    list-style: none;
+}
+
+/* HEADER-MOD =========================*/
+.header-container{
+    font-size: 26px;
+    display: flex;
+    width: 95%;
+    margin: auto;
+    padding: 10px;
+}
+.header--logo{
+    font-family: "Concert One";
+}
+.header--login{
+    margin-left: auto;
+    font-family: 'Roboto';
+    padding: 5px;
+    font-size: 20px;
+    width: 30%;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+
+/* NAV-MOD --------*/
+
+.navegation{
+    text-align: center;
+}
+.nav--home{
+    font-size: 24px;
+    font-family: 'Roboto';
+}
+/* MAIN-MOD =========================*/
+/* grid columns mod -- Essas alterações transformarão as linhas e colunas do meu site */
+.grid--3x4{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4);
+    gap: 10px;
+    margin: 10px;
+}
+.container--image1{
+    grid-column-start: 1; /*colunas*/
+    grid-column-end: 3;   /*colunas*/
+    grid-row-start: 1;     /*linhas*/
+    grid-row-end: 2;      /*linhas*/
+    display: flex;
+    position: relative;
+}
+.container--image2{
+    grid-column-start: 3; /*colunas*/
+    grid-column-end: 4;   /*colunas*/
+    grid-row-start:1;     /*linhas*/
+    grid-row-end: 3;      /*linhas*/
+    display: flex;
+    position: relative;
+}
+.container--image3{
+    grid-column-start: 1; /*colunas*/
+    grid-column-end: 2;   /*colunas*/
+    grid-row-start:2;     /*linhas*/
+    grid-row-end: 3;      /*linhas*/
+    display: flex;
+    position: relative;
+}
+.container--image4{
+    grid-column-start: 2; /*colunas*/
+    grid-column-end: 3;   /*colunas*/
+    grid-row-start: 2;     /*linhas*/
+    grid-row-end: 3;      /*linhas*/
+    display: flex;
+    position: relative;
+}
+.container--image5{
+    grid-column-start: 1; /*colunas*/
+    grid-column-end: 2;   /*colunas*/
+    grid-row-start: 3;     /*linhas*/
+    grid-row-end: 5;      /*linhas*/
+    display: flex;
+    position: relative;
+}
+.container--image6{
+    grid-column-start: 2; /*colunas*/
+    grid-column-end: 4;   /*colunas*/
+    grid-row-start: 3;     /*linhas*/
+    grid-row-end: 4;      /*linhas*/
+    display: flex;
+    position: relative;
+}
+.container--image7{
+    grid-column-start: 2; /*colunas*/
+    grid-column-end: 3;   /*colunas*/
+    grid-row-start: 4;     /*linhas*/
+    grid-row-end: 5;      /*linhas*/
+    display: flex;
+    position: relative;
+}
+.container--image8{
+    grid-column-start: 3; /*colunas*/
+    grid-column-end: 4;   /*colunas*/
+    grid-row-start: 4;     /*linhas*/
+    grid-row-end: 5;      /*linhas*/
+    display: flex;
+    position: relative;
+}
+.image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+/* FOOTER - MOD ====================*/
+footer{
+    background-color: #000000;
+    padding: 40px;
+}
+.footer--logo{
+    font-family: "Concert One";
+    color: white;
+    font-size: 24px;
+}
+.footer-container{
+    display: flex;
+}
+ul{
+    display: flex;
+    margin: auto;
+}
+.footer--icon{
+    width:  30px;
+    margin: 0 10px;
+}
+.footer--copyright{
+    color: white;
+    font-size: 24px;
+}
+
+/* TESTES PARA O FUTURO */
+
+.icon-container{
+    background-color: rgba(48, 47, 47, 0.493);
+    font-family: 'Roboto';
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: auto;
+    margin-bottom: 10px;
+}
+.icon1{
+    margin: 0 5px;
+    color: white;
+}
+.icon--image{
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    height: 100%;
+
+}
+
