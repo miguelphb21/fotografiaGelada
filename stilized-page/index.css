@@ -165,22 +165,58 @@ ul{
 
 /* TESTE MODAIS */
 .modal--login{
-    border: 1px solid;
-    text-align: center;
+    display: none;
+    border-radius: 0 0 20px 20px;
+    position: absolute;
     margin: auto;
+    border: 1px solid;
     width: 50%;
-    height: 300px;
-}
-.user{
-    margin: 20px 0;
-}
-.password{
-    margin: 20px 0;
-}
-.modal-button{
-    margin: 10px;
+    background-color: white;
+    height: 275px;
+    z-index: 999;
+    top: 25%;
+    left: 25%;
+    box-shadow: 1px 1px 500px 100px;
+    font-family: 'Roboto';
 }
 
+.title-login-container{
+    background-color: black;
+    text-align: center;
+}
+.login-container{
+    width: 70%;
+    margin: auto;
+}
+.password, .login{
+    font-size: 20px;
+    width: 100%;
+}
+.title-login{
+    color: white;
+    padding: 10px;
+}
+.user-container, .password-container{
+    margin: 10px;
+}
+.modal-button-container{
+    text-align: center;
+}
+.modal-button{
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(0, 0, 0);
+    border: 0.1px none;
+    border-radius: 10px;
+    color: white;
+}
+.modal-button:hover{
+    cursor: pointer;
+    background-color: rgb(37, 37, 37);
+}
+.active{
+    display: block;
+}
 
 
 
@@ -207,6 +243,5 @@ ul{
     position: absolute;
     z-index: 2;
     height: 100%;
-
+    background-color: aqua;
 }
-

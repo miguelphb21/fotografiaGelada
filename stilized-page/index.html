@@ -10,26 +10,33 @@
     <header>
         <div class="header-container">
             <span class="header--logo">FOTOGRAFIA GELADA</span>
-            <button class="header--login">Login</button>
+            <button class="header--login" onclick="openModal()">Login</button>
         </div>
     </header>
     <main>
 
         <div class="modal--login">
-            <h1>login</h1>
+            <div class="title-login-container">
+                <h1 class="title-login">login</h1>
+            </div>
             <div class="login-container">
-                <hr>
-                <div class="user">
-                    <label>Usuario</label>
-                    <input type="email"> 
+                <div class="user-container">
+                    <div>
+
+                        <label>Usuario</label>
+                    </div>
+                    <input class="login" type="email"> 
                 </div>
-                <div class="password">
-                    <label>Senha</label> 
-                    <input type="password" minlength="8">
+                <div class="password-container">
+                    <div>
+
+                        <label class=>Senha</label> 
+                    </div>
+                    <input class="password" type="password" minlength="8">
                 </div>
                 <div class="modal-button-container">
-                    <button class="modal-button">Cancelar</button>
-                    <button class="modal-button">Entrar</button>
+                    <button class="modal-button" onclick="closeModal()">Entrar</button>
+                    <button class="modal-button" onclick="closeModal()">Cancelar</button>
                 </div>
             </div>
         </div>
@@ -41,20 +48,26 @@
                 <span class="nav--home">Home</span>
             <hr>
         </nav>
-        <img class="image1" src="img/Everest.jpg" alt=""> 
 
     
         <div class="grid--3x4">
-            <div class="container--image1">
-                    <img class="image" src="img/Everest.jpg" alt="">              
-                <div class="icon--image">
-                    <div class="icon-container">
 
+
+            
+            <div class="container--image1">
+
+                    <img class="image" src="img/Everest.jpg" alt=""> 
+
+                <div class="icon--image">
+
+                    <div class="icon-container">
                         <img class="icon1" src="icons/coração.svg" alt="">
                         <span></span>
                         <img class="icon2" src="icons/chat-branco.svg" alt="">
                     </div>
+
                 </div>
+
             </div>
 
 
@@ -63,7 +76,6 @@
                 <img class="image" src="img/MonteFuji.jpg" alt=""> 
                 <div class="icon--image">
                     <div class="icon-container">
-
                         <img class="icon1" src="icons/coração.svg" alt="">
                         <span></span>
                         <img class="icon1" src="icons/chat-branco.svg" alt="">
@@ -71,11 +83,12 @@
                     </div>
                 </div>  
             </div>     
+
+
             <div class="container--image3">
                 <img class="image" src="img/AlpesSuiços.jpg" alt="">  
                 <div class="icon--image">
                     <div class="icon-container">
-
                         <img class="icon1" src="icons/coração.svg" alt="">
                         <span></span>
                         <img class="icon1" src="icons/chat-branco.svg" alt="">
@@ -83,11 +96,12 @@
                     </div>
                 </div>
             </div>
+
+
             <div class="container--image4">
                 <img class="image" src="img/GrandCanyon.jpg" alt=""> 
                 <div class="icon--image">
                     <div class="icon-container">
-
                         <img class="icon1" src="icons/coração.svg" alt="">
                         <span></span>
                         <img class="icon1" src="icons/chat-branco.svg" alt="">
@@ -96,13 +110,11 @@
                 </div>  
             </div>
 
-            <!-- espelhament ==
 
             <div class="container--image5">
                 <img class="image" src="img/MonteBranco.jpg" alt="">
                 <div class="icon--image">
                     <div class="icon-container">
-
                         <img class="icon1" src="icons/coração.svg" alt="">
                         <span></span>
                         <img class="icon1" src="icons/chat-branco.svg" alt="">
@@ -110,11 +122,11 @@
                     </div>
                 </div>
             </div>
+            
             <div class="container--image6">
                 <img class="image" src="img/MonteElbrus.jpg" alt="">  
                 <div class="icon--image">
                     <div class="icon-container">
-
                         <img class="icon1" src="icons/coração.svg" alt="">
                         <span></span>
                         <img class="icon1" src="icons/chat-branco.svg" alt="">
@@ -138,7 +150,6 @@
                 <img class="image" src="img/Huandoy.jpg" alt="">   
                 <div class="icon--image">
                     <div class="icon-container">
-
                         <img class="icon1" src="icons/coração.svg" alt="">
                         <span></span>
                         <img class="icon1" src="icons/chat-branco.svg" alt="">
@@ -146,9 +157,7 @@
                     </div>
                 </div>
             </div>
-
         </div>
-     -->
 
         
         
@@ -164,6 +173,7 @@
             </ul>
             <span class="footer--copyright">copyright - 2024</span>
         </div>
+        <script src="modal.js"></script>
     </footer>
 </body>
 </html>
