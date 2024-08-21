@@ -163,8 +163,32 @@ ul{
     font-size: 24px;
 }
 
+/* TESTE MODAIS */
+.modal--login{
+    border: 1px solid;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    height: 300px;
+}
+.user{
+    margin: 20px 0;
+}
+.password{
+    margin: 20px 0;
+}
+.modal-button{
+    margin: 10px;
+}
+
+
+
+
+
+
 /* TESTES PARA O FUTURO */
 
+/* alterar vvvvv */
 .icon-container{
     background-color: rgba(48, 47, 47, 0.493);
     font-family: 'Roboto';
