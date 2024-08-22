@@ -23,7 +23,6 @@ function closeWindow(){
 
 function loginConfirm(){
     if (loginUser.length === 0 && loginPassword.length === 0 ){
-        loginUser.classList.add('error-login')
         userError.innerText = "Você não digitou nada"
     }
 }
