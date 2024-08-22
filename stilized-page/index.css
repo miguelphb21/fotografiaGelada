@@ -13,6 +13,9 @@
   }
 
 /* RESETS-MOD'S =======================*/
+span{
+    font-family: "Roboto";
+}
 * {
     margin: 0;
     padding: 0;
@@ -70,64 +73,48 @@ li{
     grid-column-end: 3;   /*colunas*/
     grid-row-start: 1;     /*linhas*/
     grid-row-end: 2;      /*linhas*/
-    display: flex;
-    position: relative;
 }
 .container--image2{
     grid-column-start: 3; /*colunas*/
     grid-column-end: 4;   /*colunas*/
     grid-row-start:1;     /*linhas*/
     grid-row-end: 3;      /*linhas*/
-    display: flex;
-    position: relative;
 }
 .container--image3{
     grid-column-start: 1; /*colunas*/
     grid-column-end: 2;   /*colunas*/
     grid-row-start:2;     /*linhas*/
     grid-row-end: 3;      /*linhas*/
-    display: flex;
-    position: relative;
 }
 .container--image4{
     grid-column-start: 2; /*colunas*/
     grid-column-end: 3;   /*colunas*/
     grid-row-start: 2;     /*linhas*/
     grid-row-end: 3;      /*linhas*/
-    display: flex;
-    position: relative;
 }
 .container--image5{
     grid-column-start: 1; /*colunas*/
     grid-column-end: 2;   /*colunas*/
     grid-row-start: 3;     /*linhas*/
     grid-row-end: 5;      /*linhas*/
-    display: flex;
-    position: relative;
 }
 .container--image6{
     grid-column-start: 2; /*colunas*/
     grid-column-end: 4;   /*colunas*/
     grid-row-start: 3;     /*linhas*/
     grid-row-end: 4;      /*linhas*/
-    display: flex;
-    position: relative;
 }
 .container--image7{
     grid-column-start: 2; /*colunas*/
     grid-column-end: 3;   /*colunas*/
     grid-row-start: 4;     /*linhas*/
     grid-row-end: 5;      /*linhas*/
-    display: flex;
-    position: relative;
 }
 .container--image8{
     grid-column-start: 3; /*colunas*/
     grid-column-end: 4;   /*colunas*/
     grid-row-start: 4;     /*linhas*/
     grid-row-end: 5;      /*linhas*/
-    display: flex;
-    position: relative;
 }
 .image{
     width: 100%;
@@ -150,9 +137,10 @@ footer{
 .footer-container{
     display: flex;
 }
-ul{
+.footer-list{
     display: flex;
     margin: auto;
+    align-items: center;
 }
 .footer--icon{
     width:  30px;
@@ -164,9 +152,11 @@ ul{
 }
 
 /* TESTE MODAIS */
+
+
+/* MODAL LOGIN ============ */
 .modal--login{
     display: none;
-    border-radius: 0 0 20px 20px;
     position: absolute;
     margin: auto;
     border: 1px solid;
@@ -189,59 +179,123 @@ ul{
     margin: auto;
 }
 .password, .login{
-    font-size: 20px;
+    font-size: 100%;
     width: 100%;
 }
 .title-login{
-    color: white;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
     padding: 10px;
 }
 .user-container, .password-container{
-    margin: 10px;
+    margin: 10px 0;
 }
-.modal-button-container{
-    text-align: center;
-}
+
 .modal-button{
-    padding: 10px;
-    margin: 10px;
+    width: 49%;
+    padding: 11px;
+    margin: 0px;
     background-color: rgb(0, 0, 0);
     border: 0.1px none;
     border-radius: 10px;
     color: white;
+    border: 0.1px solid black;
 }
+.modal-button:last-child{
+    padding: 11px;
+    border: 0.1px solid black;
+    color: black;
+    background-color: white;
+}
+
 .modal-button:hover{
     cursor: pointer;
-    background-color: rgb(37, 37, 37);
+    background-color: rgb(109, 109, 109);
 }
+
+/* WINDOW INFORMATION photo - COMMENTS/LIKES ======*/
+.window-information-photo{
+    display: none;
+    background-color: #fff4d7;
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    border: 0.1px solid black;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 999;
+    left: 25%;
+    top: 30%;
+    box-shadow: 1px 1px 500px 100px;
+}
+
+.window-image-container{
+    margin: auto;
+}
+.window-image{
+    width: 100%;
+    border-radius: 10px;
+}
+.window-header-container{
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    font-family: "Roboto";
+}
+.window-exit{
+    margin-left: auto;
+    height: 50px;
+    width: 50px;
+}
+.window-interations{
+    display: flex;
+    padding: 10px;
+}
+.window-chat-icon{
+    margin-left: auto;
+}
+.window-comment{
+    display: flex;
+    padding: 10px;
+}
+/* class para o JS */
 .active{
     display: block;
 }
-
-
+.active ,.modal--login{
+    animation: modal--login 0.4s;
+}
+@keyframes modal--login {
+    from{
+        opacity: 0;
+        transform: translate3d(0,-20px,0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+.error-login{
+    border: 1.1px solid red;
+}
 
 
 
 /* TESTES PARA O FUTURO */
 
 /* alterar vvvvv */
-.icon-container{
-    background-color: rgba(48, 47, 47, 0.493);
-    font-family: 'Roboto';
-    color: white;
-    padding: 10px;
+.icon-image{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.418);
+    left: 10px;
+    bottom: 10px;
+    padding:5px;
     border-radius: 10px;
-    margin-top: auto;
-    margin-bottom: 10px;
 }
 .icon1{
     margin: 0 5px;
     color: white;
 }
-.icon--image{
-    display: flex;
-    position: absolute;
-    z-index: 2;
-    height: 100%;
-    background-color: aqua;
+.icon-container{
+    position: relative;
 }
